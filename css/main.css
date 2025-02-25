@@ -20,31 +20,35 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     /* mobile. Tamaño mínimo recomendado */
-    font-size: 14px;
+    font-size: 12px;
+    background-color: #F1FAEE;
     line-height: 1.4em;
 }
 
 /* Laptop / Tablet */
 @media (min-width: 768px) {
     body {
-        font-size: 16px;
+        font-size: 14px;
+        background-color: #E63946;
     }
 }
 
 /* Escritorio */
 @media (min-width: 1024px) {
     body {
-      font-size: 18px;
+      font-size: 16px;
+      background-color: #1D3557;
     }
 }
 h1,h2,h3,h4,h5,h6,a,small{
     font-family: poppins, sans-serif;
 }
 
-h1 {
+h1,h2,h3,h4,h5,h6 {
     font-size: 2.5rem;
-    line-height: 1.14em;
+    line-height: 1.5em;
 }
 
 header {
@@ -70,6 +74,7 @@ a {
     padding: 0.25em .5em;
     text-transform: uppercase;
     min-width: 42px;
+    transition: all 400ms ease-in;
 }
 
 a.active,
