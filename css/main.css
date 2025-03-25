@@ -72,6 +72,7 @@ background-attachment: fixed;
 
 @media (min-width: 768px) {
     body {
+        background-size: contain;
         font-size: 16px;
     }
 }
@@ -185,7 +186,8 @@ footer {
     width: 100%;
     text-align: center;
     padding: 2em;
-    background-color: #870b0b;
+    background-color:rgba(135,11,11);
+    
 }
 
 p {
