@@ -6,7 +6,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 @import url('scroll.css');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lobster&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lobster&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 
 
@@ -30,7 +30,7 @@ html {
     --text-color: #000;
     --font-family: 'Lobster', sans-serif;
     --color-link: #00e71f;
-    --font-family-crimson: 'Crimson Text', serif;
+    --font-family-boldonse: 'Boldonse', sans-serif;
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -80,19 +80,15 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 3.5em;
-    font-family: var(--font-family);
+    font-family: var(--font-family-boldonse);
     transition: transform 0.5s ease;
     text-align: center;
     color: #740909;
 }
-h1:hover {
-    transform: translate(300px,300px);
-    
-}
 
 h1 p{
 
- font-family: var(--font-family-crimson);
+ font-family: var(--font-family);
  text-align: center;
 }
 
@@ -128,7 +124,8 @@ header {
 }
 
 nav ul {
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     flex-direction: row;
@@ -162,13 +159,13 @@ a.active {
 }
 
 footer {
+    font-family: var(--font-family-boldonse);
+    color: #fff;
+    font-size: 0.5em;
     width: 100%;
     text-align: center;
     padding: 2em;
     background-color: #740909;
-    
-    
-
 }
 
 p {
@@ -185,4 +182,8 @@ p {
 
 nav.container {
     padding: 1em;
+}
+h1:hover {
+    transform: translate(300px,300px);
+    
 }
