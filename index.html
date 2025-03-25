@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Semantic HTML - Starter Markup</title>
-    <!-- 
-    # Normalize.css
-    # A modern, HTML5-ready alternative to CSS resets
-    # @see: https://necolas.github.io/normalize.css
-    -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Página de Contacto</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <meta name="apple-mobile-web-app-title" content="HTML Starter" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <meta property="og:title" content="Página de Contacto">
+    <meta property="og:description" content="Página con información de contacto y enlaces a redes sociales">
+    <meta property="og:url" content="https://tupagina.com/contacto">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -19,29 +18,74 @@
         <nav class="container">
             <ul>
                 <li>
-                    <a href="/" aria-label="Inicio">
-                        <img src="img/flo_png_by_kylewithem_dgojnzq-fullview.png" alt="Logotipo de CENTRO" width="100" >
+                    <a href="../index.html" aria-label="Inicio" class="active">
+                      
                     </a>
                 </li>
-                <!-- urls de ejemplo como rutas de navegación -->
-                <li><a href="./docs/index.html" title="Cascading Style Sheets">Docs</a></li>
-                <li><a href="https://youtu.be/M9XzHK4Hm4w?si=hhXwtsBBq4Z5ZxwQ" title="Keyboard Shortcuts">Shortcuts</a></li>
+                <!-- Navegación -->
+               
             </ul>
         </nav>
     </header>
     <main class="container">
-        <!-- Contenido -->
         <section>
             <header>
-                <h1>Semantic HTML - Starter Markup</h1>
-            </header>
-            <p>
-                <strong><i>Lorem Ipsum</i></strong> (/ˌlɔː.rəm ˈɪp.səm/ LOR-əm IP-səm) is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that does not yet have content.
-            </p>
+                <h1>Contacto
+                </h1>  </header>
+            <h2>...</h2>
+             
+            <!-- Enlaces de Contacto -->
+            <nav>
+                <ul>
+                   
+                    <li>
+                        <a href="https://www.instagram.com/yomarisol/" target="_blank" aria-label="Instagram">
+                            <img src="img/instagram.png" alt="Instagram" width="150" height="150">
+                            
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="https://x.com/SolSaca" target="_blank" aria-label="X">
+                            <img src="img/x.png" alt="X" width="200" height="200">
+                            
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="tel:+525582330387" aria-label="Llamar a mi teléfono">
+                            <img src="img/contact.png" alt="Llamar" width="150" height="150">
+                            
+                        </a>
+                    </li>
+              
+                    <li>
+                        <a href="mailto:shipjasol@gmail.com" aria-label="Enviar un correo">
+                            <img src="img/mail.png" alt="Correo Electrónico" width="200" height="200">
+                            
+                        </a>
+                    </li>
+                </li>
+
+                <li>
+                    <a href="https://github.com/solcassy" aria-label="Enviar un correo">
+                        <img src="img/github.png" alt="Correo Electrónico" width="150" height="150">
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/525582330387" aria-label="Enviar un correo">
+                        <img src="img/whatsapp.png" alt="Correo Electrónico" width="200" height="200">
+                        
+                    </a>
+                </li>
+            
+                </ul>
+            </nav>
         </section>
     </main>
     <footer>
-        <small>CENTRO Diseño, Cine y Televisión 2025</small>
+        <p>&copy; Sol Cassy</p>
     </footer>
 </body>
 </html>
