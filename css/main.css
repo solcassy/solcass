@@ -148,7 +148,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    min-width: 150px;
+    min-width: 130px;
 }
 
 a.box-link {
@@ -169,7 +169,7 @@ a.box-link:hover {
 }
 img{
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 0 auto; 
     max-width: 100%;
     height: auto;
 
