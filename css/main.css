@@ -86,7 +86,8 @@ h1 {
     color: #740909;
 }
 h1:hover {
-    transform: translateX(100px);
+    transform: translate(300px,300px);
+    
 }
 
 h1 p{
@@ -127,7 +128,7 @@ header {
 }
 
 nav ul {
-    display: flex;
+    flex-wrap:wrap;
     margin: 0;
     padding: 0;
     flex-direction: row;
@@ -136,6 +137,7 @@ nav ul {
 
 nav ul li {
     display: inline;
+    min-width: 150px;
 }
 
 a.box-link {
