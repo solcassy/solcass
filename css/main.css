@@ -166,6 +166,13 @@ a.box-link:hover {
     transition: all 100ms ease-in;
     filter: invert(1);
 }
+img{
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%;
+    height: auto;
+
+}
 
 a.active {
     pointer-events: none;
