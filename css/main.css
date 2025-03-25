@@ -20,6 +20,12 @@ html {
     box-sizing: border-box;
     height: 100%;
 }
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -40,6 +46,10 @@ html {
 }
 
 body {
+    background-image: url('../img/fundo.png');
+    background-size: cover;
+    background-position: center;
+background-attachment: fixed;
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-family);
@@ -83,7 +93,8 @@ h1 {
     font-family: var(--font-family-boldonse);
     transition: transform 0.5s ease;
     text-align: center;
-    color: #740909;
+    color: #fff4f4;
+    text-shadow: #7d0a0a 2px 2px 2px;
 }
 
 h1 p{
@@ -93,8 +104,10 @@ h1 p{
 }
 
 h2 {
-    font-size: 2em;
-    font-family: var(--font-family-crimson);
+    font-size: 1.5em;
+    color: #fff4f4;
+    text-shadow: #7d0a0a 2px 2px 2px;
+    font-family: var(--font-family-boldonse);
  text-align: center;
     
 }
@@ -165,7 +178,7 @@ footer {
     width: 100%;
     text-align: center;
     padding: 2em;
-    background-color: #740909;
+    background-color: #870b0b;
 }
 
 p {
