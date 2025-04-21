@@ -1,0 +1,211 @@
+/*
+* Normalize.css
+* A modern, HTML5-ready alternative to CSS resets
+* @see: https://necolas.github.io/normalize.css 
+*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('scroll.css');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lobster&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lobster&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+html {
+    /* 
+    * box-sizing
+    * default: 'box-sizing: content-box'
+    * @see: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing 
+    */
+    box-sizing: border-box;
+    height: 100%;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+:root{
+    --bg-color: #e8e8e8;
+    --text-color: #000;
+    --font-family: 'Lobster', sans-serif;
+    --color-link: #00e71f;
+    --font-family-boldonse: 'Boldonse', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #333;
+        --text-color: #fff;
+    }
+}
+
+body {
+    background-image: url('../img/fundo.png');
+    background-size: cover;
+    background-position: center;
+background-attachment: fixed;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+
+
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* mobile. Tamaño mínimo recomendado */
+
+    font-size: 14px;
+    line-height: 1.4em;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Laptop / Tablet */
+
+@media (min-width: 768px) {
+    body {
+        background-size: cover;
+        font-size: 16px;
+    }
+}
+
+/* Escritorio */
+
+@media (min-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1em;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-family: var(--font-family-boldonse);
+    transition: transform 0.5s ease;
+    text-align: center;
+    color: #fff4f4;
+    text-shadow: #7d0a0a 2px 2px 2px;
+}
+
+h1 p{
+
+ font-family: var(--font-family);
+ text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #fff4f4;
+    text-shadow: #7d0a0a 2px 2px 2px;
+    font-family: var(--font-family-boldonse);
+ text-align: center;
+    
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline;
+    min-width: 130px;
+}
+
+a.box-link {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.25em .5em;
+    text-transform: uppercase;
+    min-width: 42px;
+    background-color: #fff;
+    transition: all 300ms ease-out;
+    color: var (--color-link);
+}
+
+a.box-link:hover {
+    transition: all 100ms ease-in;
+    filter: invert(1);
+}
+img{
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%;
+    height: auto;
+
+}
+
+a.active {
+    pointer-events: none;
+}
+
+footer {
+    font-family: var(--font-family-boldonse);
+    color: #fff;
+    font-size: 0.5em;
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+    background-color:rgba(135,11,11);
+    
+}
+
+p {
+    max-width: 60ch; 
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1em;
+    width: 90%;
+    min-width: 290px;
+    max-width: 1200px;
+}
+
+nav.container {
+    padding: 1em;
+}
+h1:hover {
+    transform: translate(300px,300px);
+    
+}
